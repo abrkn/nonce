@@ -1,0 +1,26 @@
+{
+    "name": "nonce",
+    "description": "returns unique and ever increasing timestamps",
+    "version": "1.0.0",
+    "keywords": [
+        "nonce",
+        "timestamp",
+        "rest"
+    ],
+    "author": "abrkn <a@abrkn.com>",
+    "license": "MIT",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "mocha": "1.7.0",
+        "expect.js": "0.2.0"
+    },
+    "main": "./lib/nonce",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abrkn/nonce.git"
+    },
+    "engines": {
+        "node": ">=0.6"
+    }
+}
