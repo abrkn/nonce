@@ -36,7 +36,7 @@ describe('nonce', function() {
     })
 
     it('allows negative scale', function() {
-        var nonce = Nonce(-5)
+        var nonce = Nonce(-1)
         , n = nonce()
         expect(n).to.be.a('number')
         expect(n % 1).to.be(0)

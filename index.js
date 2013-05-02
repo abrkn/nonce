@@ -5,7 +5,7 @@ module.exports = function(scale) {
     if (typeof scale == 'undefined') scale = 2
 
     return function() {
-        var now = +new Date()
+        var now = Math.round(+new Date() * Math.pow(10, scale))
 
         if (now == last) {
             repeat++
@@ -14,6 +14,6 @@ module.exports = function(scale) {
             last = now
         }
 
-        return Math.round(last * Math.pow(10, scale)) + repeat
+        return now + repeat
     }
 }
