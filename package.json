@@ -1,7 +1,7 @@
 {
   "name": "nonce",
   "description": "returns unique and ever increasing timestamps",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "nonce",
     "timestamp",
