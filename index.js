@@ -1,11 +1,11 @@
-module.exports = function(scale) {
+module.exports = function(length) {
     var last = null
     , repeat = 0
 
-    if (typeof scale == 'undefined') scale = 2
+    if (typeof length == 'undefined') length = 15
 
     return function() {
-        var now = Math.round(+new Date() * Math.pow(10, scale))
+        var now = Math.pow(10, 2) * +new Date()
 
         if (now == last) {
             repeat++
@@ -14,6 +14,7 @@ module.exports = function(scale) {
             last = now
         }
 
-        return now + repeat
+        var s = (now + repeat).toString()
+        return +s.substr(s.length - length)
     }
 }
