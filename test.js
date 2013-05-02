@@ -1,4 +1,4 @@
-var Nonce = require('../lib/nonce')
+var Nonce = require('./index')
 , expect = require('expect.js');
 
 describe('nonce', function() {
@@ -28,4 +28,17 @@ describe('nonce', function() {
             last = now;
         }
     });
-});
+
+    it('allows zero scale', function() {
+        var nonce = Nonce(0)
+        , n = nonce()
+        expect(n).to.be.a('number')
+    })
+
+    it('allows negative scale', function() {
+        var nonce = Nonce(-5)
+        , n = nonce()
+        expect(n).to.be.a('number')
+        expect(n % 1).to.be(0)
+    })
+})

@@ -7,8 +7,8 @@
         "timestamp",
         "rest"
     ],
-    "author": "abrkn <a@abrkn.com>",
-    "license": "MIT",
+    "author": "Andreas Brekken <a@abrkn.com>",
+    "license": "Free as in Hugs",
     "dependencies": {
     },
     "devDependencies": {
